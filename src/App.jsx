@@ -1,9 +1,21 @@
+import {Player} from "./components/Player.jsx";
+import {GameBoard} from "./components/GameBoard.tsx";
 
 function App() {
-  
+
 
   return (
-    <h1>React Tic-Tac-Toe</h1>
+    <main>
+      <div id='game-container'>
+        <ol id='players'>
+          <Player initialName='Player1' symbol='X'/>
+          <Player initialName='Player2' symbol='O'/>
+        </ol>
+        <GameBoard />
+      </div>
+
+      LOG
+    </main>
   )
 }
 
