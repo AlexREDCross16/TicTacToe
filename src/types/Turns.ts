@@ -5,3 +5,5 @@ export type Turn = {
   },
   player: string,
 }
+
+export type GameBoard = Turn;
